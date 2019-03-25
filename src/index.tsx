@@ -1,16 +1,9 @@
-import * as React from "react";
-import { render } from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import 'react-app-polyfill/ie11';
+import 'moment/locale/ko';
+import 'antd/dist/antd.css';
+// import 'semantic-ui-css/semantic.min.css';
 
-import "./styles.css";
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+ReactDOM.render(<App />, document.getElementById('root'));
